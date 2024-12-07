@@ -1,0 +1,240 @@
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elumbaFlexbox 5</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+        height: calc(100vh - 8px);
+
+    }
+
+    nav,
+    main,
+    aside,
+    footer {
+        border: 1px solid black;
+        padding: 4px;
+    }
+
+    .navupper {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .navbox {
+        background-color: red;
+        height: 35px;
+        width: 35px;
+    }
+
+    .navlower {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin: 2px;
+        padding: 2px;
+
+
+    }
+
+    .navboxes {
+        background-color: red;
+        height: 25px;
+        width: 50px;
+    }
+
+    .middle {
+        display: flex;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+        align-content: center;
+    }
+
+    .mainone{
+        display: flex;
+        gap: 4px;
+        flex-grow: 1;
+        padding: 4px;
+        justify-content: space-around;
+        align-self: center;
+    }
+
+    .mainleft{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        border: 1px solid black;
+        width: 25.6%;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .mainright{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        border: 1px solid black;
+        width: 25.6%;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .boxers{
+        border: 1px solid black;
+        height: 70px;
+        width: 70px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+
+    .asideboxes {
+        border: 1px solid black;
+        height: 4vh;
+        width: 15vw;
+    }
+
+    .footermain {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        align-items: center;
+    }
+
+    .rightfooter {
+        display: flex;
+        gap: 4px;
+    }
+
+    .footercube {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .leftfooter{
+        display: flex;
+        gap: 4px;
+        
+        
+    }
+
+    .boxes{
+        background-color: red;
+        height: 20px;
+        width: 20px;
+    }
+
+</style>
+
+<body>
+
+    <nav>
+        <div class="navupper">
+            <div class="navbox"></div>
+            <div>Flexbox</div>
+        </div>
+
+        <div class="navlower">
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+        </div>
+    </nav>
+
+    <div class="middle">
+        <main>
+            <div class="mainone">
+                <div class="mainleft">
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                </div>
+                <div class="mainright">
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                    <div class="boxers"></div>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footermain">
+            <div class="rightfooter">
+                <div class="footercube"></div>
+               
+                <div class="down">
+                    <div>Flexbox</div>
+                    <div>©Copyrights All rights reserved</div>
+                </div>
+            </div>
+            
+            <div class="leftfooter">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
